@@ -1,0 +1,10 @@
+<h1>Companies</h1>
+
+<% companies = Company.all %> 
+
+<!-- the list HTML is required here in-line to make the ruby appear as a list. This comment will show on inspect source-->
+<ul>
+<% for company in companies %>
+  <li><%=company ["name"] %></li> 
+  <% end %>
+  </ul>
