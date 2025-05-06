@@ -1,0 +1,23 @@
+<h1> DICE </h1>
+<p> Roll 2 dice. Below we'll output the randomly generated total. </p>
+
+<% die1 = rand(1..6)%>
+
+<% die2 = rand(1..6)%>
+
+<p>
+<img src="/images/dice/<%= die1%>.svg" alt="image of die">
+<img src="/images/dice/<%= die2%>.svg" alt="image of die">
+</p>
+<p>
+Total: <%= total = die1 + die2 %>
+</p>
+
+<p>
+<a href="/dice">Roll Again</a>
+</p>
+
+
+
+
+
